@@ -1,12 +1,24 @@
-import { createRouter, createWebHistory } from 'vue-router'
+import { createRouter, createWebHistory } from "vue-router";
 
-import notFound from '../components/notFound.vue'
-import productIndex from '../components/products/index.vue'
+import employee from '../components/Employee.vue';
+import HelloWorld from '../components/HelloWorld.vue';
+import notFound from '../components/notFound.vue';
+import productIndex from '../components/products/index.vue';
 
 const routes = [
     {
         path: '/',
         name: 'Products',
+        component: HelloWorld,
+    },
+    {
+        path: '/employee',
+        name: 'Employee',
+        component: employee,
+    },
+    {
+        path: '/hello',
+        name: 'Hello World',
         component: productIndex,
     },
     {
